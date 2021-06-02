@@ -1,18 +1,21 @@
 public class Garfo
 {
     //Indica se o garfo está a ser agarrado ou não
-    private  boolean agarrado = false;
+    private  boolean agarrado;
     private int id;
 
     public Garfo(int id)
     {
         this.id = id;
+        agarrado = false;
     }
 
     public int getId()
     {
         return id;
     }
+
+    public boolean getAgarrado() { return agarrado; }
 
     public synchronized void agarra()
     {

@@ -14,6 +14,12 @@ public class Jantar
         Filosofo kant = new Filosofo(garfo4, garfo5, "Kant");
         Filosofo socrates = new Filosofo(garfo5, garfo1, "Sócrates");
 
+        platao.setFilosofoAEsquerda(socrates);
+        nietzsche.setFilosofoAEsquerda(platao);
+        descartes.setFilosofoAEsquerda(nietzsche);
+        kant.setFilosofoAEsquerda(descartes);
+        socrates.setFilosofoAEsquerda(kant);
+
         platao.start();
         nietzsche.start();
         descartes.start();
